@@ -9,3 +9,12 @@
     const lastModifiedParagraph = document.getElementById('lastModified');
     const lastModifiedDate = document.lastModified; 
     lastModifiedParagraph.textContent = `Last Modified: ${lastModifiedDate}`;
+
+// Menu
+    const hamButton = document.querySelector('#menu');
+    const navigation = document.querySelector('.navigation');
+
+    hamButton.addEventListener('click', () => {
+        navigation.classList.toggle('open');
+        hamButton.classList.toggle('open');
+    });
