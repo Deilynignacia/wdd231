@@ -1,7 +1,7 @@
 /* VARIABLES */
 :root {
-    --primary-color: #141414;
-    --secondary-color: #91007b;
+    --primary-color: #cf6cb8;
+    --secondary-color: #1e1e1e;
     --accent-color: #c18f33;
     --background-color: #fffefc;
     --text-color-dark: #1B1B1B;
@@ -90,7 +90,7 @@ header nav {
 footer {
     text-align: center;
     background-color: var(--primary-color);
-    color: var(--text-color-light);
+    color: var(--text-color-dark);
     padding: 0.7rem 0;
     margin-top: 0.05rem;
 }
