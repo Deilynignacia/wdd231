@@ -224,9 +224,8 @@ footer p {
     padding: 0.5rem;
 }
 
-/* LARGER */
+/* LARGER (GRID) */
 @media screen and (min-width: 800px) {
-    /* MAIN GRID */
     main {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -265,7 +264,7 @@ footer p {
         grid-row: 2;
     }
 
-    /* SMALL GRID*/
+    /* SMALL GRID */
     .third .categories,
     .third .courses {
         display: grid;
