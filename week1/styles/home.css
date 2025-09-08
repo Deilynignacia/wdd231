@@ -229,12 +229,13 @@ footer p {
     padding: 0.5rem;
 }
 
-/* BUTTONS */
+/* CATEGORIES */
 .third .categories a {
-    display: inline-block;
+    display: block; 
     background-color: var(--accent-color);
     color: var(--text-color-dark);
-    padding: 0.5rem 11rem;
+    padding: 0.5rem 11rem; 
+    margin-bottom: 0.5rem; 
     font-weight: bold;
     border-radius: 4px;
     text-decoration: none;
