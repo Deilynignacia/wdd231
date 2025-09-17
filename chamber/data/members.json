@@ -6,13 +6,5 @@
     "website": "https://puertovalparaiso.cl",
     "image": "port.png",
     "membership": 3
-  },
-  {
-    "name": "Café Alegre",
-    "address": "Cerro Alegre 120, Valparaíso",
-    "phone": "+56 9 8765 4321",
-    "website": "https://cafealegre.cl",
-    "image": "cafe.png",
-    "membership": 2
   }
 ]
