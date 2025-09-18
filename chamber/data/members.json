@@ -4,7 +4,61 @@
     "address": "Av. Errázuriz 25, Valparaíso",
     "phone": "+56 32 220 1234",
     "website": "https://puertovalparaiso.cl",
-    "image": "port.png",
+    "image": "puerto.jpg",
     "membership": 3
+  },
+  
+  {
+    "name": "COMALIM",
+    "address": "Avenida Concon Reñaca 4000 Phillippi 255, Concón",
+    "phone": "+56 32 245 1984",
+    "website": "https://immodaboutique.cl",
+    "image": "comalim.png",
+    "membership": 1
+  },
+  
+  {
+    "name": "Mascofood Delivery",
+    "address": "Av. Blanca Estela - Lomas de Montemar 1927, Local 6, Concón",
+    "phone": "+56 32 876 9289",
+    "website": "https://mascofood.cl",
+    "image": "mascofood.jpg",
+    "membership": 1
+  },
+  
+  {
+    "name": "Bogarín",
+    "address": "Pl. Victoria 1670, Valparaíso",
+    "phone": "+56 32 667 8778",
+    "website": "https://bogarin.cl",
+    "image": "bogarin.jpg",
+    "membership": 2
+  },
+  
+  {
+    "name": "Rose Illari",
+    "address": "Victoria 2337, Valparaíso",
+    "phone": "+56 32 998 5555",
+    "website": "https://roseillari.cl",
+    "image": "rose.jpg",
+    "membership": 1
+  },
+  
+  {
+    "name": "Fashions Park Valparaíso",
+    "address": "Independencia 1799-1701, Valparaíso",
+    "phone": "+56 32 888 5654",
+    "website": "https://vfashionspark.cl",
+    "image": "fashion.jpg",
+    "membership": 2
+  },
+  
+  {
+    "name": "Nostalgic",
+    "address": "Av. Valparaíso 254, Viña del Mar",
+    "phone": "+56 32 233 1232",
+    "website": "https://nostalgic.cl",
+    "image": "nostalgic.jpg",
+    "membership": 1
   }
 ]
