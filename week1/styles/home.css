@@ -95,10 +95,6 @@ header nav {
     color: var(--accent-color);
 }
 
-.menu-toggle {
-    display: none;
-}
-
 /* FOOTER */
 footer {
     text-align: center;
@@ -136,28 +132,6 @@ footer p {
     border-radius: 2px;
 }
 
-/* MENU */
-.menu-toggle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 4px;
-    width: 30px;
-    height: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-left: auto;
-}
-
-.menu-toggle span {
-    display: block;
-    height: 3px;
-    width: 100%;
-    background-color: var(--text-color-light);
-    border-radius: 2px;
-}
-
 /* NAVIGATION MOBILE */
 .navigation {
     display: none;
@@ -171,6 +145,9 @@ footer p {
     display: flex;
 }
 
+.nav-links .active {
+    color: var(--accent-color);
+}
 
 /* ABOUT ME */
 .first {
@@ -209,59 +186,40 @@ footer p {
 }
 
 /* WEB CERTIFICATE COURSES */
-.third {
-    text-align: center;
-    border: 1px solid var(--secondary-color);
+.courses {
+    flex-direction: column;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
 }
 
-.third h2 {
-    background-color: var(--primary-color);
-    color: var(--text-color-light);
-    padding: 0.5rem;
-    margin: 0 0 0.5rem;
+.course-card {
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.course-card h3 {
+    color: var(--primary-color);
+    margin: 0.5rem;
+}
+
+.course-card p {
+    margin: 0.5rem;
     font-size: 1rem;
 }
 
 .third p {
-    font-size: 1rem;
-    margin-top: 1rem;
     background-color: var(--background-color);
-    padding: 0.5rem;
-}
-
-/* CATEGORIES */
-.third .categories a {
-    display: block; 
-    background-color: var(--accent-color);
-    color: var(--text-color-dark);
-    padding: 0.5rem 11rem; 
-    margin-bottom: 0.5rem; 
-    font-weight: bold;
-    border-radius: 4px;
-    text-decoration: none;
+    padding: 0.3rem;
     text-align: center;
 }
 
-.third .categories a:hover {
-    background-color: var(--primary-color);
-    color: var(--text-color-light);
+.status {
+    font-weight: bold;
+    color: rgb(6, 131, 6);
 }
 
-/* LIST */
-.third .courses {
-    display: flex;
-    gap: 0.5rem;
-    flex-direction: column;
-    padding: 0.5rem 1rem;
-}
-
-.third .courses div {
-    background-color:var(--background-color);
-    border: 1px solid var(--primary-color);
-    padding: 0.5rem;
-}
-
-/* LARGER (GRID) */
+/* LARGER DEVICES (GRID STYLE) */
 @media screen and (min-width: 800px) {
     main {
         display: grid;
@@ -301,18 +259,8 @@ footer p {
         grid-row: 2;
     }
 
-    /* SMALL GRID */
-    .third .categories,
-    .third .courses {
+    .courses {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0.5rem;
-        justify-items: center;
-    }
-
-    .third .categories button,
-    .third .courses div {
-        width: 100%;
-        text-align: center;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     }
 }
