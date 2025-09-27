@@ -5,7 +5,8 @@
     "phone": "+56 32 220 1234",
     "website": "https://puertovalparaiso.cl",
     "image": "puerto.jpg",
-    "membership": 3
+    "category": "Port Industry",
+    "membership": "1 - GOLDEN"
   },
   
   {
@@ -14,7 +15,8 @@
     "phone": "+56 32 245 1984",
     "website": "https://immodaboutique.cl",
     "image": "comalim.png",
-    "membership": 1
+    "category": "Food Industry",
+    "membership": "1 - BRONZE"
   },
   
   {
@@ -23,7 +25,8 @@
     "phone": "+56 32 876 9289",
     "website": "https://mascofood.cl",
     "image": "mascofood.jpg",
-    "membership": 1
+    "category": "Pets Industry",
+    "membership": "1 - BRONZE"
   },
   
   {
@@ -32,7 +35,8 @@
     "phone": "+56 32 667 8778",
     "website": "https://bogarin.cl",
     "image": "bogarin.jpg",
-    "membership": 2
+    "category": "Food Industry",
+    "membership": "1 - BRONZE"
   },
   
   {
@@ -41,7 +45,8 @@
     "phone": "+56 32 998 5555",
     "website": "https://roseillari.cl",
     "image": "rose.jpg",
-    "membership": 1
+    "category": "Fashion Industry",
+    "membership": "1 - BRONZE"
   },
   
   {
@@ -50,7 +55,8 @@
     "phone": "+56 32 888 5654",
     "website": "https://vfashionspark.cl",
     "image": "fashion.jpg",
-    "membership": 2
+    "category": "Fashion Industry",
+    "membership": "2 - SILVER"
   },
   
   {
@@ -59,6 +65,7 @@
     "phone": "+56 32 233 1232",
     "website": "https://nostalgic.cl",
     "image": "nostalgic.jpg",
-    "membership": 1
+    "category": "Fashion Industry",
+    "membership": "1 - BRONZE"
   }
 ]

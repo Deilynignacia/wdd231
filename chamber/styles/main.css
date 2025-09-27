@@ -1,6 +1,6 @@
 /*VARIABLES*/
 :root {
-    --primary-color: #25a7be;
+    --primary-color: #064954;
     --secondary-color: #d3e7eb;
     --accent-color: #0073b0;
     --background-color: #f3f3f3;
@@ -123,11 +123,70 @@ header nav {
   display: flex;
 }
 
+.nav-links a.active {
+    color: var(--text-color-dark);
+}
+
+/* GRID */
+.view-toggle {
+    padding-bottom: 1rem;
+}
+
+.view-toggle button {
+    background-color: var(--text-color-dark);
+    color: var(--text-color-light);
+    border-radius: 5rem;
+    border: 9rem;
+    box-sizing: border-box;
+    padding: 0.8rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+
+.view-toggle button:hover {
+    background-color: var(--primary-color);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.grid #members {
+    display: grid;
+    gap: 1rem;
+}
+
+/* LIST */
+.list #members {
+    display: block;
+}
+
+.list .member-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    flex-wrap: wrap;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+.list .member-card h2,
+.list .member-card p,
+.list .member-card a {
+    font-size: 0.8rem;
+    flex: 1; 
+}
+
+.list .member-card img {
+    max-width: 60px;
+    height: auto;
+    flex-shrink: 0;
+}
+
 /*FOOTER*/
 footer {
     text-align: center;
     background-color: var(--primary-color);
-    color: var(--text-color-dark);
+    color: var(--text-color-light);
     padding: 0.7rem 0;
     margin-top: 0.05rem;
 }
@@ -157,37 +216,4 @@ footer p {
 .member-card img {
     max-width: 10rem;
     border-radius: 50%;
-}
-
-/*DESKTOP*/
-@media screen and (min-width: 800px) {
-    main {
-        display: block; 
-    }
-
-    #members {
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    }
-
-    .nav-links {
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    .navigation {
-        display: flex;
-        flex-direction: row;
-        background: none;
-    }
-
-    header h1 {
-        display: block;
-    }
-
-    .menu-toggle {
-        display: none;
-    }
 }

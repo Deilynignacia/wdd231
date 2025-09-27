@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
         
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-large.css">
     <script src="scripts/main.js" defer></script>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
@@ -31,21 +32,24 @@
                 </a>
             </div>
             <nav>
-            <button id="menu" class="menu-toggle" aria-label="Toggle navigation">Menu</button>
-            <ul class="nav-links navigation">
-                <li><a href="home.html">HOME</a></li>
-                <li><a href="directory.html">DIRECTORY</a></li>
-                <li><a href="join.html">JOIN</a></li>
-                <li><a href="discover.html">DISCOVER</a></li>
-            </ul>
+                <button id="menu" class="menu-toggle" aria-label="Toggle navigation">Menu</button>
+                <ul class="nav-links navigation">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="directory.html" class="active">DIRECTORY</a></li>
+                    <li><a href="join.html">JOIN</a></li>
+                    <li><a href="discover.html">DISCOVER</a></li>
+                </ul>
             </nav>
         </header>
 
         <main>
             <h1>Directory</h1>
-                <div id="members">
+                <div class="view-toggle">
+                    <button id="grid-view">Grid View</button>
+                    <button id="list-view">List View</button>
                 </div>
-
+                <div id="members"></div>
+                <div id="members"></div>
         </main>
         <footer>
             <div>

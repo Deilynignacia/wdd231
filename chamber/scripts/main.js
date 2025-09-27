@@ -39,9 +39,25 @@ const membersContainer = document.getElementById("members");
                     <p>${member.address}</p>
                     <p>${member.phone}</p>
                     <p>${member.membership}</p>
+                    <p>${member.category}</p>
                     <a href="${member.website}" target="_blank">Visit Website</a>`;
                 membersContainer.appendChild(card);
             });
 
         })
+});
+
+//Grid and List view
+const gridBtn = document.getElementById("grid-view");
+const listBtn = document.getElementById("list-view");
+const body = document.body;
+
+gridBtn.addEventListener("click", () => {
+    body.classList.add("grid");
+    body.classList.remove("list");
+});
+
+listBtn.addEventListener("click", () => {
+    body.classList.add("list");
+    body.classList.remove("grid");
 });
