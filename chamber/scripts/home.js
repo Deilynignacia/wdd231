@@ -81,8 +81,13 @@ function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp.toFixed(0)}&deg;C`;
 
     const description = data.weather[0].description;
-
-    captionDesc.textContent = description.toUpperCase();
+    const temp = data.main.temp.toFixed(1);
+    const humidity = data.main.humidity;
+    const wind = data.wind.speed;
+    
+    const detailedDesc = `Currently ${description}, with a temperature of ${temp}°C, humidity at ${humidity}%, and wind speeds of ${wind} km/h.`;
+    
+    captionDesc.textContent = detailedDesc;
 
     const iconCode = data.weather[0].icon;
     const iconsrc = `https://openweathermap.org/img/w/${iconCode}.png`;
