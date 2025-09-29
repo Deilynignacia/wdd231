@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Directory</title>
     
-    <meta name="description" content="Valparaíso Chamber of Commerce - Directory">
+    <meta name="description" content="Valparaíso Chamber of Commerce - Home Page">
     <meta name="author" content="Deilyn Ignacia Cecilia Zamudio Córdova">
 
     <meta property="og:title" content="Home Page">
     <meta property="og:description" content="Valparaíso Chamber of Commerce - Home Page">
     <meta property="og:image" content="https://Deilynignacia/wdd231/chamber/images/image.png">
-    <meta property="og:url" content="https://Deilynignacia/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://Deilynignacia/wdd231/chamber/index.html">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
         
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/main-large.css">
-    <script src="scripts/main.js" defer></script>
+    <script src="scripts/home.js" defer></script>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 </head>
@@ -27,14 +27,14 @@
     <body>
         <header>
             <div class="logo">
-                <a href="directory.html">
+                <a href="index.html">
                     <img src="images/favicon.png" alt="Logo" loading="lazy">
                 </a>
             </div>
             <nav>
                 <button id="menu" class="menu-toggle" aria-label="Toggle navigation">Menu</button>
                 <ul class="nav-links navigation">
-                    <li><a href="home.html" class="active">HOME</a></li>
+                    <li><a href="index.html" class="active">HOME</a></li>
                     <li><a href="directory.html">DIRECTORY</a></li>
                     <li><a href="join.html">JOIN</a></li>
                     <li><a href="discover.html">DISCOVER</a></li>
@@ -46,7 +46,41 @@
             <section class="hero">
                 <div class="hero-content">
                     <img src="images/home - chamber of commerce.jpg" alt="Illustration of Valparaíso city" loading="lazy">
+                    <a href="#" class="hero-button">Join the Chamber</a>
                 </div>
+            </section>
+            
+            <section class="Events">
+                <h1>Home</h1>
+                <div>
+                    <h2>Events</h2>
+                </div>
+            </section>
+            <section class="weather">
+                <div id="current-weather-box">
+                    <h2>Current Weather</h2>
+                    <div class="weather-main"> 
+                        <img id="weather-icon" src="" alt="Weather Icon" loading="lazy"> 
+                        <span id="current-temp"></span>
+                    </div>
+                    <p id="weather-desc"></p>
+                </div>
+                <div>
+                    <h2>Weather Forecast</h2>
+                    <div class="forecast-list"> <span id="day1"></span>
+                        <span id="day2"></span>
+                        <span id="day3"></span>
+                    </div> 
+                </div>
+            </section>
+
+            <section class="spotlights">
+                <h2>Spotlights</h2>
+                <div class="view-toggle">
+                    <button id="grid-view">Grid View</button>
+                    <button id="list-view">List View</button>
+                </div>
+                <div id="members"></div>
             </section>
 
         </main>
