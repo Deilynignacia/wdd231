@@ -1,0 +1,99 @@
+@media screen and (min-width: 800px) {
+    main {
+        display: grid;
+        grid-template-areas:
+            "hero hero hero"
+            "title title title"
+            "events current forecast"
+            "spotlights spotlights spotlights";
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5rem;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 1rem 1rem 1rem;
+    }
+
+        main > h1 {
+        grid-area: title;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    /* HERO*/
+    .hero {
+        grid-area: hero;
+    }
+
+    .hero-content {
+        position: relative;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .hero-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: var(--text-color-dark);
+    color: var(--text-color-light);
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1.1rem 1rem;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    }
+
+    /* GRID */
+    .Events {
+        grid-area: events;
+    }
+
+    /* GRID (WEATHER SECTION)*/
+    .weather {
+        display: contents;
+    }
+
+    .weather > #current-weather-box {
+        grid-area: current;
+    }
+
+    .weather > div:last-of-type {
+        grid-area: forecast;
+    }
+
+    /* SPOTLIGHTS*/
+    .spotlights {
+        grid-area: spotlights;
+    }
+
+    #members {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1rem;
+    }
+
+    /* NAV */
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        background: none;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+}
