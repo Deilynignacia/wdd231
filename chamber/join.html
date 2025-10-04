@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Chamber</title>
+    
+    <meta name="description" content="Valparaíso Chamber of Commerce - Join the Chamber">
+    <meta name="author" content="Deilyn Ignacia Cecilia Zamudio Córdova">
+
+    <meta property="og:title" content="Join Us">
+    <meta property="og:description" content="Valparaíso Chamber of Commerce - Join the Chamber">
+    <meta property="og:image" content="https://Deilynignacia/wdd231/chamber/images/image.png">
+    <meta property="og:url" content="https://Deilynignacia/wdd231/chamber/index.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <script src="scripts/home.js" defer></script>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/favicon.png" alt="Logo" loading="lazy">
+                </a>
+            </div>
+            <nav>
+                <button id="menu" class="menu-toggle" aria-label="Toggle navigation">Menu</button>
+                <ul class="nav-links navigation">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="directory.html">DIRECTORY</a></li>
+                    <li><a href="join.html" class="active">JOIN</a></li>
+                    <li><a href="discover.html">DISCOVER</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="join-page-grid">
+            <h1>Join the Chamber</h1>
+            <p>You can apply to join the chamber today!</p>
+
+            <form method="GET" action="thankyou.html">
+
+                <input type="hidden" id="timestamp" name="timestamp"> 
+                
+                <fieldset class="applicant-info">
+                    <legend>Applicant & Contact Information</legend>
+                    
+                    <label for="firstName">First Name*</label>
+                    <input type="text" id="firstName" name="firstName" required title="Applicant's First Name" autocomplete="given-name">
+
+                    <label for="lastName">Last Name*</label>
+                    <input type="text" id="lastName" name="lastName" required title="Applicant's Last Name" autocomplete="family-name">
+                    
+                    <label for="orgTitle">Organizational Title</label>
+                    <input 
+                        type="text" 
+                        id="orgTitle" 
+                        name="orgTitle" 
+                        title="Only alpha characters, hyphens, and spaces. Minimum 7 characters." 
+                        autocomplete="organization-title"
+                        pattern="[A-Za-z\s-]{7,}"
+                        > 
+
+                    <label for="email">Email Address*</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        required 
+                        title="Email Address" 
+                        autocomplete="email"
+                        placeholder="nombre@ejemplo.com">
+                    
+                    <label for="phone">Mobile Phone*</label>
+                    <input type="tel" id="phone" name="phone" required title="Mobile Phone Number" autocomplete="tel">
+                </fieldset>
+
+                <fieldset class="business-details">
+                    <legend>Business Details & Membership</legend>
+
+                    <label for="orgName">Organization Name*</label>
+                    <input type="text" id="orgName" name="orgName" required title="Organization Name" autocomplete="organization">
+
+                    <label for="level">Select Membership Level*</label>
+                    <select id="level" name="level" required title="Membership Level Selection">
+                        <option value="" disabled selected>Select an Option...</option>
+                        <option value="NP">NP Membership (Non-Profit - No Fee)</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+
+                    <label for="description">Business/Organization Description (Optional):</label>
+                    <textarea id="description" name="description" rows="5" title="Organization Description"></textarea>
+                </fieldset>
+
+                <input type="submit" value="Apply to Join the Chamber">
+            </form>
+            
+            <section class="membership-levels-cards">
+                <h2>Membership Benefits</h2>
+                
+                <div class="card" id="np-card">
+                    <h4>NP Membership</h4>
+                    <p>For non-profit organizations. No fee.</p>
+                    <a href="#" class="modal-link" data-modal="modal-np">See Benefits</a>
+                </div>
+
+                <div class="card" id="bronze-card">
+                    <h4>Bronze Membership</h4>
+                    <p>Starting benefits package and events.</p>
+                    <a href="#" class="modal-link" data-modal="modal-bronze">See Benefits</a>
+                </div>
+
+                <div class="card" id="silver-card">
+                    <h4>Silver Membership</h4>
+                    <p>Increased event access and training discounts.</p>
+                    <a href="#" class="modal-link" data-modal="modal-silver">See Benefits</a>
+                </div>
+
+                <div class="card" id="gold-card">
+                    <h4>Gold Membership</h4>
+                    <p>Premium events, advertising spots, and top discounts.</p>
+                    <a href="#" class="modal-link" data-modal="modal-gold">See Benefits</a>
+                </div>
+            </section>
+
+            <div id="modal-np" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h4>NP Membership Benefits</h4>
+                    <ul>
+                        <li>Community networking access.</li>
+                        <li>Basic event attendance (some fees may apply).</li>
+                    </ul>
+                </div>
+            </div>
+            </main>
+
+        <footer>
+            <div>
+                <a href="https://github.com/Deilynignacia" class="social"><img src="images/github.svg" alt="github"></a>
+                <a href="https://www.linkedin.com/in/deilyn-zamudio-895503224/" class="social"><img src="images/linkedin.svg" alt="linkedin"></a>
+                <a href="https://www.tiktok.com/es/" class="social"><img src="images/tiktok.svg" alt="tiktok"></a>
+            </div>
+            <p>&copy; <span id="currentyear"></span> Deilyn Zamudio Córdova - Chile</p>
+            <p id="lastModified"></p>
+        </footer> 
+    </body>
+</html>
