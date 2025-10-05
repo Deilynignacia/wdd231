@@ -23,4 +23,25 @@
 document.getElementById('timestamp').value = today.toISOString();
 
 // Modals
-const membershipLevel = document.getElementById('modal-link');
+const modalLinks = document.querySelectorAll('.modal-link'); 
+
+modalLinks.forEach(link => {
+
+    link.addEventListener('click', (event) => {
+        event.preventDefault(); 
+        
+        const modalId = link.getAttribute('data-modal');
+        const modal = document.getElementById(modalId);
+        
+        modal.style.display = 'block';
+    });
+});
+
+const closeButtons = document.querySelectorAll('.close-button'); 
+
+closeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        button.closest('.modal').style.display = 'none';
+    });
+});
+

@@ -325,3 +325,160 @@ footer p {
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     margin: 1rem;
 }
+
+/* MODALS */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    font-size: large;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    background-color: var(--background-color);
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+}
+
+.close-button {
+    color: var(--primary-color);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-link {
+    display: inline-block; 
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-link:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color-light)
+}
+
+.membership-levels-cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background-color: var(--background-color);
+}
+
+.membership-levels-cards .card h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.membership-levels-cards .card p {
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+/* FORM*/
+form {
+    padding: 0; /* Remueve el padding por defecto del main si lo tiene */
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    background-color: var(--text-color-light); /* Fondo blanco para el formulario */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    margin: 1rem;
+    padding: 1.5rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 6px;
+}
+
+legend {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0; /* Asegura que no tenga margen extra */
+}
+
+/* Estilo para cada campo (label/input) */
+label {
+    display: flex;
+    flex-direction: column; /* Coloca el input debajo del texto */
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    font-size: 0.9em;
+    color: var(--text-color-dark);
+}
+
+label input[type="text"],
+label input[type="email"],
+label input[type="tel"],
+label select,
+label textarea {
+    padding: 0.7rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    margin-top: 5px;
+    font-size: 1em;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06); /* Sombra interna para profundidad */
+    transition: border-color 0.3s;
+}
+
+label input:focus,
+label select:focus,
+label textarea:focus {
+    border-color: var(--accent-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 115, 176, 0.5); /* Sombra al enfocar */
+}
+
+/* Estilo para el botón de Submit */
+input[type="submit"] {
+    display: block;
+    width: 90%; /* Ancho completo dentro del padding del form */
+    margin: 1.5rem auto; /* Centrado horizontalmente y con buen margen */
+    padding: 1rem;
+    background-color: var(--accent-color);
+    color: var(--text-color-light);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #005f93; /* Un tono más oscuro de accent-color */
+}
