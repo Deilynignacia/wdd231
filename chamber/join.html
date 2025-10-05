@@ -48,16 +48,29 @@
 
             <form method="GET" action="thankyou.html">
 
-                <input type="hidden" id="timestamp" name="timestamp"> 
+                <input 
+                    type="hidden" 
+                    id="timestamp" 
+                    name="timestamp"> 
                 
                 <fieldset class="applicant-info">
                     <legend>Applicant & Contact Information</legend>
                     
                     <label for="firstName">First Name*</label>
-                    <input type="text" id="firstName" name="firstName" required title="Applicant's First Name" autocomplete="given-name">
+                    <input 
+                        type="text" 
+                        id="firstName" 
+                        name="firstName" 
+                        required title="Applicant's First Name" 
+                        autocomplete="given-name">
 
                     <label for="lastName">Last Name*</label>
-                    <input type="text" id="lastName" name="lastName" required title="Applicant's Last Name" autocomplete="family-name">
+                    <input 
+                        type="text" 
+                        id="lastName" 
+                        name="lastName" 
+                        required title="Applicant's Last Name" 
+                        autocomplete="family-name">
                     
                     <label for="orgTitle">Organizational Title</label>
                     <input 
@@ -66,8 +79,7 @@
                         name="orgTitle" 
                         title="Only alpha characters, hyphens, and spaces. Minimum 7 characters." 
                         autocomplete="organization-title"
-                        pattern="[A-Za-z\s-]{7,}"
-                        > 
+                        pattern="[A-Za-z\s-]{7,}"> 
 
                     <label for="email">Email Address*</label>
                     <input 
@@ -80,29 +92,49 @@
                         placeholder="nombre@ejemplo.com">
                     
                     <label for="phone">Mobile Phone*</label>
-                    <input type="tel" id="phone" name="phone" required title="Mobile Phone Number" autocomplete="tel">
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        required title="Mobile Phone Number" 
+                        autocomplete="tel">
                 </fieldset>
 
                 <fieldset class="business-details">
                     <legend>Business Details & Membership</legend>
 
                     <label for="orgName">Organization Name*</label>
-                    <input type="text" id="orgName" name="orgName" required title="Organization Name" autocomplete="organization">
+                    <input 
+                        type="text" 
+                        id="orgName" 
+                        name="orgName" 
+                        required title="Organization Name" 
+                        autocomplete="organization">
 
                     <label for="level">Select Membership Level*</label>
-                    <select id="level" name="level" required title="Membership Level Selection">
-                        <option value="" disabled selected>Select an Option...</option>
-                        <option value="NP">NP Membership (Non-Profit - No Fee)</option>
-                        <option value="Bronze">Bronze Membership</option>
-                        <option value="Silver">Silver Membership</option>
-                        <option value="Gold">Gold Membership</option>
+                    <select 
+                        id="level" 
+                        name="level" 
+                        required title="Membership Level Selection">
+                            <option value="" disabled selected>Select an Option...</option>
+                            <option value="NP">NP Membership (Non-Profit - No Fee)</option>
+                            <option value="Bronze">Bronze Membership</option>
+                            <option value="Silver">Silver Membership</option>
+                            <option value="Gold">Gold Membership</option>
                     </select>
 
-                    <label for="description">Business/Organization Description (Optional):</label>
-                    <textarea id="description" name="description" rows="5" title="Organization Description"></textarea>
+                    <label for="description">Tell us about your organization! (Optional):</label>
+                    <textarea 
+                        id="description" 
+                        name="description" 
+                        rows="5" 
+                        title="Organization Description">
+                    </textarea>
                 </fieldset>
 
-                <input type="submit" value="Apply to Join the Chamber">
+                <input 
+                    type="submit" 
+                    value="Apply to Join the Chamber">
             </form>
             
             <section class="membership-levels-cards">
