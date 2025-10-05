@@ -18,3 +18,9 @@
         navigation.classList.toggle('open');
         hamButton.classList.toggle('open');
     });
+
+// Timestamp
+document.getElementById('timestamp').value = today.toISOString();
+
+// Modals
+const membershipLevel = document.getElementById('modal-link');
