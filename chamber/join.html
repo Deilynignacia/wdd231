@@ -19,7 +19,7 @@
         
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/home-large.css">
-    <script src="scripts/home.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 </head>
@@ -56,23 +56,25 @@
                 <fieldset class="applicant-info">
                     <legend>Applicant & Contact Information</legend>
                     
-                    <label for="firstName">First Name*</label>
+                    <label for="firstName">First Name*
                     <input 
                         type="text" 
                         id="firstName" 
                         name="firstName" 
                         required title="Applicant's First Name" 
                         autocomplete="given-name">
+                    </label>
 
-                    <label for="lastName">Last Name*</label>
+                    <label for="lastName">Last Name*
                     <input 
                         type="text" 
                         id="lastName" 
                         name="lastName" 
                         required title="Applicant's Last Name" 
                         autocomplete="family-name">
+                    </label>
                     
-                    <label for="orgTitle">Organizational Title</label>
+                    <label for="orgTitle">Organizational Title
                     <input 
                         type="text" 
                         id="orgTitle" 
@@ -80,8 +82,9 @@
                         title="Only alpha characters, hyphens, and spaces. Minimum 7 characters." 
                         autocomplete="organization-title"
                         pattern="[A-Za-z\s-]{7,}"> 
+                    </label>
 
-                    <label for="email">Email Address*</label>
+                    <label for="email">Email Address*
                     <input 
                         type="email" 
                         id="email" 
@@ -90,28 +93,32 @@
                         title="Email Address" 
                         autocomplete="email"
                         placeholder="nombre@ejemplo.com">
+                    </label>
                     
-                    <label for="phone">Mobile Phone*</label>
+                    <label for="phone">Mobile Phone*
                     <input 
                         type="tel" 
                         id="phone" 
                         name="phone" 
-                        required title="Mobile Phone Number" 
+                        required 
+                        title="Mobile Phone Number" 
                         autocomplete="tel">
+                    </label>
                 </fieldset>
 
                 <fieldset class="business-details">
                     <legend>Business Details & Membership</legend>
 
-                    <label for="orgName">Organization Name*</label>
+                    <label for="orgName">Organization Name*
                     <input 
                         type="text" 
                         id="orgName" 
                         name="orgName" 
                         required title="Organization Name" 
                         autocomplete="organization">
+                    </label>
 
-                    <label for="level">Select Membership Level*</label>
+                    <label for="level">Select Membership Level*
                     <select 
                         id="level" 
                         name="level" 
@@ -122,14 +129,15 @@
                             <option value="Silver">Silver Membership</option>
                             <option value="Gold">Gold Membership</option>
                     </select>
+                    </label>
 
-                    <label for="description">Tell us about your organization! (Optional):</label>
+                    <label for="description">Tell us about your organization! (Optional):
                     <textarea 
                         id="description" 
                         name="description" 
                         rows="5" 
-                        title="Organization Description">
-                    </textarea>
+                        title="Organization Description"></textarea>
+                    </label>
                 </fieldset>
 
                 <input 
