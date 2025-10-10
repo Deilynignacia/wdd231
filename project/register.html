@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | A Christmas Carol: The Musical.</title>
+    
+    <meta name="description" content="Home page featuring a hero image, a 'Get Started!' button (leading to from.html), informative cards, key dates, locations and a subscribe to receibe updates option.">
+    <meta name="author" content="Deilyn Ignacia Cecilia Zamudio Córdova">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <link rel="stylesheet" href="styles/home-about.css">
+
+    <script src="js/register.js"></script>
+
+</head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="home.html">
+                    <img src="images/logo.png" alt="The Musical Logo" loading="lazy">
+                    <h1>A Christmas Carol: Digital Stage Manager</h1>
+                </a>
+            </div>
+            <nav>
+            <button id="menu" class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links navigation">
+                <li><a href="home.html" class="active">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="form.html">REGISTER</a></li>
+            </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Registro de Miembros de Producción</h2>
+            <form method="get" action="profile-action.html" id="registrationForm"> 
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="birth">Date of Birth:</label>
+                <input type="#" id="birth" name="birth" required>
+
+                <label for="email">Email:</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required 
+                    title="Email Address" 
+                    autocomplete="email"
+                    placeholder="nombre@ejemplo.com">
+
+                <label for="phone">Phone Number:</label>
+                <input 
+                    type="tel" 
+                    id="phone" 
+                    name="phone" 
+                    required 
+                    title="Mobile Phone Number" 
+                    autocomplete="tel">
+
+                <label for="main_team">Select your Team</label>
+                <select id="main_team" name="main_team" required>
+                    <option value="" disabled selected>Select Your team</option>
+                    <option value="acting">Acting</option>
+                    <option value="choir">Choir</option>
+                    <option value="dance">Dance</option>
+                    <option value="production">Production</option>
+                </select>
+                
+                <div id="secondary_selection_container" style="display: none;">
+                    <label for="role">Select your Part:</label>
+                    <select id="role" name="role" required>
+                        </select>
+                </div>
+
+                <button type="submit">Next</button>
+            </form>
+        </main>
+        <footer>
+            <p>A Christmas Carol: The Musical. © 2025.</p>
+            <p> Produced by the Quilpué Institute of Religion of The Church of Jesus Christ of Latter-day Saints.</p>
+            <a href="references.html">References Page</a>
+        </footer>  
+    </body>
+</html>

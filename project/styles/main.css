@@ -1,0 +1,243 @@
+/* VARIABLES */
+:root {
+    --primary-color: #510000;
+    --secondary-color: #2e422c;
+    --accent-color: #A79573;
+    --background-color: #fffefc;
+    --text-color-dark: #1B1B1B;
+    --text-color-light: #FFFFFF;
+}
+
+/* GENERAL */
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color-dark);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: "Playfair Display", serif;
+    color: var(--primary-color);
+}
+
+p, li {
+    font-size: large;
+}
+
+main {
+    max-width: 100%;
+    background-color: var(--text-color-light);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    padding-bottom: 1rem;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+/* HEADER */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+}
+
+header .logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color-light);
+    gap: 1rem;
+}
+
+header .logo img {
+    height: 2rem;
+}
+
+header h1 {
+    font-size: 1rem;
+    margin: 0;
+    color: var(--text-color-light);
+    display: none;
+}
+
+header nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1.5rem;
+    justify-content: flex-end;
+}
+
+.nav-links a {
+    color: var(--text-color-light);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    padding: 0.7rem 0;
+    margin-top: 0.05rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.7rem;
+    font-weight: normal;
+}
+
+/* MENU */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--text-color-light);
+    border-radius: 2px;
+}
+
+/* NAVIGATION MOBILE */
+.navigation {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+    padding: 1rem 0;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.nav-links a.active {
+    color: var(--text-color-dark);
+}
+
+a {
+    color: var(--text-color-light);
+    text-decoration: none;
+}
+
+/* SUBSCRIBE */
+.subscribe-section {
+    background-color: var(--secondary-color);
+    color: var(--text-color-light);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.subscribe-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.subscribe-content h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    color: var(--text-color-light);
+    margin-bottom: 0.5rem;
+}
+
+.subscribe-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.subscribe-content form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.subscribe-content input[type="email"] {
+    flex-grow: 1;
+    min-width: 250px;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+}
+
+.subscribe-content button[type="submit"] {
+    background-color: transparent;
+    color: var(--text-color-light);
+    border: 2px solid var(--text-color-light);
+    padding: 0.75rem 2rem;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.subscribe-content button[type="submit"]:hover {
+    background-color: var(--text-color-light);
+    color: var(--primary-color);
+}
+
+/* LARGER */
+@media screen and (min-width: 800px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0;
+    }
+
+    header h1 {
+        display: block;
+    }
+}
+
+img {
+    height: auto;
+    width: auto;
+}
