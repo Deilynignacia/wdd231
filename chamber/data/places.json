@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Ascensor Concepción",
+        "address": "Pasaje Bavestrello 167, Valparaíso",
+        "description": "The city's oldest funicular. It connects the downtown area with the touristy Cerro Concepción.",
+        "image": "funicular.jpg"
+    },
+    {
+        "name": "La Sebastiana (Neruda's House)",
+        "address": "Ferrari 692, Valparaíso",
+        "description": "One of the three houses belonging to the poet Pablo Neruda located on Cerro Florida.",
+        "image": "sebastiana.jpeg"
+    },
+    {
+        "name": "Muelle Prat",
+        "address": "Av. Errázuriz, Valparaíso",
+        "description": "The heart of port activity.",
+        "image": "prat.jpg"
+    },
+    {
+        "name": "Plaza Sotomayor",
+        "address": "Plaza Sotomayor, Valparaíso",
+        "description": "Valparaíso's main civic center, facing the port and surrounded by historic buildings.",
+        "image": "sotomayor.jpg"
+    },
+    {
+        "name": "Paseo 21 de Mayo",
+        "address": "Paseo 21 de Mayo, Valparaíso",
+        "description": "A viewpoint located on Cerro Playa Ancha, known for its panoramic views of the port and the bay.",
+        "image": "paseo.jpg"
+    },
+    {
+        "name": "Museo Naval y Marítimo",
+        "address": "Paseo 21 de Mayo 43, Valparaíso",
+        "description": "Located on Paseo 21 de Mayo, it narrates the Chilean naval history.",
+        "image": "museo.jpg"
+    },
+    {
+        "name": "Cerro Alegre",
+        "address": "Cerro Alegre, Valparaíso",
+        "description": "Famous for its murals, colorful houses, and art galleries, was declared World Heritage Site by UNESCO in 2003.",
+        "image": "alegre.jpg"
+    },
+    {
+        "name": "Barrio Puerto",
+        "address": "Calles Serrano y Cochrane, Valparaíso",
+        "description": "The oldest sector of the city, famous for its colonial architecture and traditional markets.",
+        "image": "barrio.jpg"
+    }
+]

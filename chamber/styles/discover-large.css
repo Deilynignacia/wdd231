@@ -1,0 +1,90 @@
+/* MEDIUM */
+@media (min-width: 641px) {
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        background: none;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1.5rem; 
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+    
+    main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 1.5rem;
+    }
+
+    #places-grid {
+        grid-template-columns: 1fr 1fr; 
+        gap: 30px;
+        
+        grid-template-areas:
+            "ascensor-concepción la-sebastiana-neruda-s-house"
+            "muelle-prat plaza-sotomayor"
+            "paseo-21-de-mayo museo-naval-y-marítimo"
+            "cerro-alegre barrio-puerto"; 
+    }
+
+    .place-card figure img {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    }
+
+    .place-card figure img:hover {
+        transform: scale(1.05); 
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+        cursor: pointer;
+    }
+}
+
+/* LARGE */
+@media screen and (min-width: 1000px) {
+    main {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 1.5rem;
+    }
+
+    #places-grid {
+        grid-template-columns: 1fr 1fr 1fr; 
+        gap: 40px;
+        grid-template-areas:
+            "ascensor-concepción la-sebastiana-neruda-s-house muelle-prat"
+            "plaza-sotomayor paseo-21-de-mayo museo-naval-y-marítimo"
+            "cerro-alegre barrio-puerto ."; 
+    }
+
+    .place-card figure img {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    }
+
+    .place-card figure img:hover {
+        transform: scale(1.05); 
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+        cursor: pointer;
+    }
+    /* NAV */
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        background: none;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+}
