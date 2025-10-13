@@ -1,0 +1,22 @@
+@media screen and (min-width: 800px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0;
+    }
+
+    header h1 {
+        display: block;
+    }
+}
+
+img {
+    height: auto;
+    width: auto;
+}

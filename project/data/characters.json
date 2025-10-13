@@ -1,0 +1,154 @@
+[
+    {
+        "id": 1,
+        "name": "Ebenezer Scrooge",
+        "role": "Lead Character",
+        "character_summary": "A miserly, cold-hearted old man whose avarice isolates him from the Christmas spirit. His journey involves two distinct looks.",
+        "looks": [
+            {
+                "look_name": "Somber Businessman (Act I & III)",
+                "description": "Somber, oversized black frock coat and waistcoat. Austere silhouette for Act 1 and final.",
+                "costume_file": "ebenezer-scrooge.webp"
+            },
+            {
+                "look_name": "Nightwear/Ghost Visits (Act II)",
+                "description": "Simple white nightgown, cap, and slippers.",
+                "costume_file": "ebenezer-scrooge-night.webp"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Bob Cratchit",
+        "role": "Supporting Lead",
+        "character_summary": "Scrooge's clerk, a poor but good-hearted man devoted to his family.",
+        "looks": [
+            {
+                "look_name": "Main Look",
+                "description": "Worn jacket and pants. Large, patched overcoat. Essential accessories: scarf and brimmed hat.",
+                "costume_file": "bob-cratchit.webp"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Cratchit Family (Children)",
+        "role": "Supporting Characters/Ensemble",
+        "character_summary": "The family of Bob Cratchit. Working class.",
+        "looks": [
+            {
+                "look_name": "Martha Cratchit",
+                "description": "Modest Victorian dress (full skirt, high neck) in neutral tones.",
+                "costume_file": "martha-cratchit.webp"
+            },
+            {
+                "look_name": "Cratchit Daughter/Child",
+                "description": "Simple brown dress with a white collar/apron.",
+                "costume_file": "cratchit-daughters.webp"
+            },
+            {
+                "look_name": "Tiny Tim",
+                "description": "Small, slightly oversized coat and trousers. MUST INCLUDE a wooden crutch.",
+                "costume_file": "tiny-tim.webp"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Fred and Guests",
+        "role": "Supporting/Ensemble",
+        "character_summary": "Scrooge's cheerful nephew and his social circle. Upper-middle-class.",
+        "looks": [
+            {
+                "look_name": "Fred (Scrooge's Nephew)",
+                "description": "Tailored jacket and breeches in bright colors. Tall boots and riding crop optional.",
+                "costume_file": "fred.webp"
+            },
+            {
+                "look_name": "Party Women (Ensemble)",
+                "description": "Elaborate ball gowns with lace and full skirts. Expensive looking jewel tones (reds, emeralds).",
+                "costume_file": "party-women.webp"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Ensemble/Minor Roles",
+        "role": "Ensemble/Supporting",
+        "character_summary": "Characters of the London streets and social interactions.",
+        "looks": [
+            {
+                "look_name": "Charity Men",
+                "description": "Formal black or dark grey frock coats, top hats, and vests.",
+                "costume_file": "images/charity-men.webp"
+            },
+            {
+                "look_name": "Belle (Flashback)",
+                "description": "High-waisted dress in light blue or cream tones, fabrics for youthful appearance.",
+                "costume_file": "belle.webp"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Jacob Marley",
+        "role": "Ghost/Special Role",
+        "character_summary": "The deceased business partner of Scrooge.",
+        "looks": [
+            {
+                "look_name": "Costume",
+                "description": "Worn business suit with long, heavy chains and ledger attached. Visible worn binding around the jaw.",
+                "costume_file": "jacob-marley.webp"
+            },
+            {
+                "look_name": "Makeup",
+                "description": "Corpse-like makeup: pale white base with heavy black shadowing around eyes and cheeks.",
+                "costume_file": "jacob-marley-makeup.webp"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Ghost of Christmas Past",
+        "role": "Ghost/Special Role",
+        "character_summary": "The first of the three spirits, representing memory and the innocence of Scrooge's youth.",
+        "looks": [
+            {
+                "look_name": "Costume",
+                "description": "Translucent white/silver fabrics with heavy drapery.",
+                "costume_file": "ghost-past.webp"
+            },
+            {
+                "look_name": "Makeup",
+                "description": "Heavy white foundation, iridescent powder, and light blue/silver contouring.",
+                "costume_file": "ghost-past-makeup.webp"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Ghost of Christmas Present",
+        "role": "Ghost/Special Role",
+        "character_summary": "A giant, jovial spirit representing the current Christmas season.",
+        "looks": [
+            {
+                "look_name": "Main Look",
+                "description": "Green velvet or wool robe, trimmed in white fur/trim.",
+                "costume_file": "ghost-present.webp"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Ghost of Christmas Yet to Come",
+        "role": "Ghost/Special Role",
+        "character_summary": "The silent, ominous phantom showing Scrooge the consequences.",
+        "looks": [
+            {
+                "look_name": "Main Look",
+                "description": "Black, heavy draped cloak with hood. Minimal details.",
+                "costume_file": "ghost-future.webp"
+            }
+        ]
+    }
+]

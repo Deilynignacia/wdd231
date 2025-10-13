@@ -21,14 +21,14 @@
     <link rel="stylesheet" href="styles/home-large.css">
 
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/storage.js" defer></script>
+    <script src="scripts/characters.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="images/logo.png" alt="Digital Stage Manager logo" loading="lazy">
+                <img src="images/logo.webp" alt="Digital Stage Manager logo" loading="lazy">
                 <h1>Digital Stage Manager</h1>
             </a>
         </div>
@@ -47,42 +47,51 @@
     </header>
 
     <main>
-        <!-- HERO SECTION -->
         <section class="hero">
             <div class="hero-content">
-                <img src="images/hero-placeholder.webp" alt="Theatre stage background" loading="lazy">
-                <h2 class="hero-title">Welcome to Your Digital Stage Manager</h2>
+                <img src="images/hero-golden.webp" alt="A Christmas Carol: The Musical" loading="lazy">
+                <a href="form.html" class="hero-button">Get on Stage!</a>
             </div>
+        </section>
+        <section class="characters-list-section">
+            <h2>Character Costume Details</h2>
+            <div class="characters-buttons-container" id="characters-buttons">
+                </div>
         </section>
 
-        <!-- ANNOUNCEMENTS -->
-        <section class="announcements">
-            <h2>Relevant Announcements</h2>
-            <div id="announcements-container">
-                <p>No new announcements at the moment.</p>
+        <div id="character-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h3 id="modal-name"></h3>
+                <p id="modal-role"></p>
+                <div class="modal-body">
+                    <img id="modal-image" src="" alt="Costume Image" loading="lazy">
+                    <p id="modal-description"></p>
+                </div>
+                <p class="costume-file-info">Image File: <span id="modal-file"></span></p>
             </div>
-        </section>
-
-        <!-- RESOURCES -->
-        <section class="resources">
-            <h2>My Resources</h2>
-            <div id="resource-list">
-            </div>
-        </section>
+        </div>
     </main>
-    <footer>
-        <section class="extras">
-            <div id="quote-container">
-                <button id="get-quote">Quote</button>
-                <p id="quote-text"></p>
-            </div>
 
+    <footer>
+            <section class="subscribe-section">
+                <div class="subscribe-content">
+                    <h2>Subscribe for News and Updates</h2>
+                    <p>Receive the latest news about the production, dates, and exclusive content directly in your inbox.</p>
+                    <form action="https://formspree.io/f/xdkdyzwn" method="post">
+                        <input type="email" name="email" placeholder="Email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </section>
+        <section class="extras">
             <div id="last-visit">
                 <button id="show-last-visit">Last Visit</button>
                 <p id="visit-text"></p>
             </div>
         </section>
-        <p>© <span id="year"></span> Digital Stage Manager. All rights reserved.</p>
+        <p>&copy; <span id="currentyear"></span> Deilyn Zamudio Córdova - Digital Stage Manager.</p>
+        <p>© <span id="year"></span> </p>
     </footer>
 </body>
 </html>
