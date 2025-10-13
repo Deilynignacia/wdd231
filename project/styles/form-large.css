@@ -1,0 +1,57 @@
+@media screen and (min-width: 800px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+    }
+
+    header h1 {
+        display: block; 
+        font-size: 1.8rem;
+    }
+    
+    h2, h3, p {
+        padding: 0;
+        text-align: left;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+
+    .subscribe-section .subscribe-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .subscribe-section form {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .subscribe-section input[type="email"] {
+        flex-grow: 1;
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+    header .logo h1 {
+        font-size: 2.2rem;
+    }
+
+    header {
+        padding: 15px 80px;
+    }
+
+¿    main {
+        padding: 0 40px;
+    }
+}

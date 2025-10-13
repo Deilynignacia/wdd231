@@ -39,40 +39,81 @@
                 <span></span><span></span><span></span>
             </button>
             <ul class="nav-links navigation">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedule.html" class="active">Schedule</a></li>
                 <li><a href="form.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <img src="images/hero-golden.webp" alt="A Christmas Carol: The Musical" loading="lazy">
-                <a href="form.html" class="hero-button">Do you have questions?</a>
-            </div>
-        </section>
-        <section class="characters-list-section">
-            <h2>Character Costume Details</h2>
-            <div class="characters-buttons-container" id="characters-buttons">
+        <section class="schedule-section">
+            <h2>Weekly Rehearsal Schedule: Nov 4 - Nov 10</h2>
+            <p class="schedule-note">All cast members are required unless otherwise noted. Costume fittings are individual and by appointment.</p>
+            
+            <div class="calendar-grid">
+                
+                <div class="day-card">
+                    <h3>Monday, Nov 4</h3>
+                    <div class="event morning-event">
+                        <h4>10:00 - 12:00</h4>
+                        <p>Scene 1 & 2 Blocking (Scrooge, Cratchit, Fred)</p>
+                    </div>
+                    <div class="event afternoon-event">
+                        <h4>14:00 - 16:00</h4>
+                        <p>Music Rehearsal: "God Rest Ye Merry Gentlemen" (Ensemble)</p>
+                    </div>
                 </div>
-        </section>
 
-        <div id="character-modal" class="modal">
-            <div class="modal-content">
-                <span class="close-btn">&times;</span>
-                <h3 id="modal-name"></h3>
-                <p id="modal-role"></p>
-                <div class="modal-body">
-                    <img id="modal-image" src="" alt="Costume Image" loading="lazy">
-                    <p id="modal-description"></p>
+                <div class="day-card">
+                    <h3>Tuesday, Nov 5</h3>
+                    <div class="event afternoon-event">
+                        <h4>15:00 - 18:00</h4>
+                        <p>Act I Run-Through (FULL CAST)</p>
+                    </div>
                 </div>
-                <p class="costume-file-info">Image File: <span id="modal-file"></span></p>
+                
+                <div class="day-card off-day">
+                    <h3>Wednesday, Nov 6</h3>
+                    <p class="off-day-text">OFF DAY / Production Meeting</p>
+                </div>
+                
+                <div class="day-card">
+                    <h3>Thursday, Nov 7</h3>
+                    <div class="event morning-event">
+                        <h4>9:00 - 11:30</h4>
+                        <p>Tech Rehearsal: Marley & Past Ghost Scenes</p>
+                    </div>
+                    <div class="event afternoon-event">
+                        <h4>14:30 - 17:00</h4>
+                        <p>Cratchit Family Scenes (All Cratchits)</p>
+                    </div>
+                </div>
+                
+                <div class="day-card">
+                    <h3>Friday, Nov 8</h3>
+                    <div class="event full-day-event">
+                        <h4>18:00 - 21:00</h4>
+                        <p>FULL RUN (Act I & II) - Promptness Mandatory</p>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <h3>Saturday, Nov 9</h3>
+                    <div class="event morning-event">
+                        <h4>11:00 - 14:00</h4>
+                        <p>Dance Call: Party Scene (Fred & Guests)</p>
+                    </div>
+                </div>
+                
+                <div class="day-card off-day">
+                    <h3>Sunday, Nov 10</h3>
+                    <p class="off-day-text">OFF DAY / Production Meeting</p>
+                </div>
+                
             </div>
-        </div>
+        </section>
     </main>
-
     <footer>
             <section class="subscribe-section">
                 <div class="subscribe-content">

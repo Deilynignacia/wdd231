@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME | Digital Stage Manager</title>
+    <title>CONTACT FORM | Digital Stage Manager</title>
 
-    <meta name="description" content="Home page of the Digital Stage Manager, a production organization tool for theatrical teams.">
+    <meta name="description" content="Contact Form of the Digital Stage Manager, a production organization tool for theatrical teams.">
     <meta name="author" content="Deilyn Ignacia Cecilia Zamudio Córdova">
 
     <meta property="og:title" content="Digital Stage Manager - Home">
@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/home-large.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/form.css">
 
     <script src="scripts/main.js" defer></script>
     <script src="scripts/characters.js" defer></script>
@@ -33,44 +33,37 @@
                 <h1>Digital Stage Manager</h1>
             </a>
         </div>
-
-        <nav>
-            <button id="menu" class="menu-toggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links navigation">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="schedule.html">Schedule</a></li>
-                <li><a href="form.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <img src="images/hero-golden.webp" alt="A Christmas Carol: The Musical" loading="lazy">
-                <a href="form.html" class="hero-button">Do you have questions?</a>
-            </div>
-        </section>
-        <section class="characters-list-section">
-            <h2>Character Costume Details</h2>
-            <div class="characters-buttons-container" id="characters-buttons">
-                </div>
-        </section>
+        <section class="form-container">
+            <h2>Contact Form</h2>
+            <p>Please, use this form to ask relevant questions regarding your character or other aspects of the musical only.</p>
+            
+            <form action="form-action.html" method="get">
+                
+                <label for="actor-name">Name:</label>
+                <input type="text" id="actor-name" name="actor-name" required>
+                
+                <label for="character-played">Role:</label>
+                <select id="character-played" name="character-played" required>
+                    <option value="" disabled selected>Select your Character:</option>
+                    <option value="scrooge">Ebenezer Scrooge</option>
+                    <option value="cratchit">Bob Cratchit</option>
+                    <option value="tiny-tim">Tiny Tim</option>
+                    <option value="fred">Fred</option>
+                    <option value="ghost-present">Ghost of Christmas Past</option>
+                    <option value="ghost-present">Ghost of Christmas Present</option>
+                    <option value="ghost-present">Ghost of Christmas Yet to Come</option>
+                    <option value="ensemble">Ensamble</option>
+                </select>
+                
+                <label for="question">Ask your Question:</label>
+                <textarea id="question" name="design-details" maxlength="300" required></textarea>
 
-        <div id="character-modal" class="modal">
-            <div class="modal-content">
-                <span class="close-btn">&times;</span>
-                <h3 id="modal-name"></h3>
-                <p id="modal-role"></p>
-                <div class="modal-body">
-                    <img id="modal-image" src="" alt="Costume Image" loading="lazy">
-                    <p id="modal-description"></p>
-                </div>
-                <p class="costume-file-info">Image File: <span id="modal-file"></span></p>
-            </div>
-        </div>
+                <button type="submit">Send my question</button>
+            </form>
+        </section>
     </main>
 
     <footer>

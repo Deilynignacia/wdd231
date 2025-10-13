@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME | Digital Stage Manager</title>
+    <title>CONTACT FORM | Digital Stage Manager</title>
 
-    <meta name="description" content="Home page of the Digital Stage Manager, a production organization tool for theatrical teams.">
+    <meta name="description" content="Contact Form of the Digital Stage Manager, a production organization tool for theatrical teams.">
     <meta name="author" content="Deilyn Ignacia Cecilia Zamudio Córdova">
 
     <meta property="og:title" content="Digital Stage Manager - Home">
@@ -19,10 +19,10 @@
 
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/home-large.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/form.css">
 
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/characters.js" defer></script>
+    <script src="scripts/form-action.js" defer></script>
 </head>
 
 <body>
@@ -33,44 +33,21 @@
                 <h1>Digital Stage Manager</h1>
             </a>
         </div>
-
-        <nav>
-            <button id="menu" class="menu-toggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links navigation">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="schedule.html">Schedule</a></li>
-                <li><a href="form.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <img src="images/hero-golden.webp" alt="A Christmas Carol: The Musical" loading="lazy">
-                <a href="form.html" class="hero-button">Do you have questions?</a>
-            </div>
-        </section>
-        <section class="characters-list-section">
-            <h2>Character Costume Details</h2>
-            <div class="characters-buttons-container" id="characters-buttons">
+        <section class="confirmation-container">
+            <h2>Your question has been successfuly submited</h2>
+            <p>Thank you for contacting the Production Team.</p>
+            
+            <div id="report-details">
+                <h3>Question Summary:</h3>
                 </div>
-        </section>
 
-        <div id="character-modal" class="modal">
-            <div class="modal-content">
-                <span class="close-btn">&times;</span>
-                <h3 id="modal-name"></h3>
-                <p id="modal-role"></p>
-                <div class="modal-body">
-                    <img id="modal-image" src="" alt="Costume Image" loading="lazy">
-                    <p id="modal-description"></p>
-                </div>
-                <p class="costume-file-info">Image File: <span id="modal-file"></span></p>
-            </div>
-        </div>
+            <p class="back-link">
+                <a href="index.html">Go back to Home Page!</a>
+            </p>
+        </section>
     </main>
 
     <footer>
