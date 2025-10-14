@@ -1,4 +1,4 @@
-// form-action.js (CORREGIDO)
+// form-action.js
 document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(window.location.search);
     const detailsDiv = document.getElementById('report-details');

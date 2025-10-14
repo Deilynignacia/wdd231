@@ -96,7 +96,7 @@ header nav {
 }
 
 .nav-links a.active {
-    color: var(--text-color-dark);
+    border-bottom: 3px solid var(--accent-color);
 }
 
 .menu-toggle {
@@ -151,10 +151,6 @@ footer p {
 
 .navigation.open {
     display: flex;
-}
-
-.nav-links a.active {
-    color: var(--text-color-dark);
 }
 
 a {
