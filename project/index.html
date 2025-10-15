@@ -60,7 +60,13 @@
                     decoding="async">
                 <a href="form.html" class="hero-button">Do you have questions?</a>
             </div>
+        </section>
 
+        <section class="characters-list-section">
+            <h2>Character Costume Details</h2>
+            <div class="characters-buttons-container" id="characters-buttons">
+                </div>
+        </section>
 
         <div id="character-modal" class="modal">
             <div class="modal-content">
@@ -68,7 +74,7 @@
                 <h3 id="modal-name"></h3>
                 <p id="modal-role"></p>
                 <div class="modal-body">
-                    <img id="modal-image" src="" alt="Costume Image" width="300" height="400" loading="lazy">
+                    <img id="modal-image" src="" alt="Costume Image" loading="lazy">
                     <p id="modal-description"></p>
                 </div>
                 <p class="costume-file-info">Image File: <span id="modal-file"></span></p>
@@ -76,27 +82,37 @@
         </div>
     </main>
 
-    <footer>
-            <section class="extras">
-                </section>
-            
-            <p>&copy; <span id="currentyear"></span> Deilyn Zamudio Córdova - Digital Stage Manager.</p>
-            <p>© <span id="year"></span> </p>
-            
-            <div class="footer-video-container">
-                <p class="video-caption">Digital Stage Manager Presentation Video</p>
-                <div class="video-wrapper">
-                    <iframe 
-                        class="responsive-video"
-                        src="https://www.youtube.com/embed/dzMledG4q08?si=sETXJQ4-H_qjsRec" 
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen
-                        loading="lazy"> </iframe>
+<footer>
+        <section class="subscribe-section">
+                <div class="subscribe-content">
+                    <h2>Subscribe for News and Updates</h2>
+                    <p>Receive the latest news about the production, dates, and exclusive content directly in your inbox.</p>
+                    <form action="https://formspree.io/f/xdkdyzwn" method="post">
+                        <input type="email" name="email" placeholder="Email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
                 </div>
+            </section>
+        <section class="extras">
+            <div id="last-visit">
+                <button id="show-last-visit">Last Visit</button>
+                <p id="visit-text"></p>
             </div>
-        </footer>
+        </section>
+        <div class="footer-video-container">
+            <p class="video-caption">Digital Stage Manager Presentation Video</p>
+            <div class="video-wrapper">
+                <iframe 
+                    class="responsive-video"
+                    src="https://www.youtube.com/embed/dzMledG4q08?si=sETXJQ4-H_qjsRec" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen
+                    loading="lazy"> </iframe>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
