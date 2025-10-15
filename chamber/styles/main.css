@@ -258,6 +258,7 @@ footer p {
     box-shadow: none;
     display: block;
     height: auto;
+    aspect-ratio: 16 / 9;
 }
 
 .hero-button {

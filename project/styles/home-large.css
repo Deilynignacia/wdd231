@@ -51,6 +51,8 @@
         height: 100%;
         width: 100%;
         object-position: top;
+        aspect-ratio: 16 / 9;
+
     }
 
     .hero-button {
@@ -112,7 +114,7 @@
         padding: 15px 80px;
     }
 
-¿    main {
+    main {
         padding: 0 40px;
     }
 }
